@@ -44,5 +44,9 @@ sysadmin@localhost:~$
     If the desired command is in the list that the history command generates, it can be executed by typing an exclamation point ! character and then the number next to the command
     To execute the nth command from the bottom of the history list, type !-n and hit Enter
     To execute the most recent command type !! and hit Enter
+
+
+    echo command is used to dislay the output in the terminal.
+    
     
 
