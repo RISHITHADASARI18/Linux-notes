@@ -82,7 +82,35 @@ sysadmin@localhost:~$
                       echo is /bin/echo
 
 
-                      
+          
+    Alias:
+      An alias is a shortcut name for a longer command.
+      sysadmin@localhost:~$ alias                                             
+alias egrep='egrep --color=auto'                                       
+alias fgrep='fgrep --color=auto'                                        
+alias grep='grep --color=auto'                                          
+alias l='ls -CF'                                                       
+alias la='ls -A'                                                       
+alias ll='ls -alF'                                                     
+alias ls='ls --color=auto'
+  Initiasilation files are designed to make the process of creating alias automatically.
+   NEW alias can be created by -- alias name=command
+    ex:
+    sysadmin@localhost:~$ alias mycal="cal 2019"                                    
+sysadmin@localhost:~$ mycal                                                     
+                            2019                                                
+      January               February               March                        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa                
+       1  2  3  4  5                  1  2                  1  2                
+ 6  7  8  9 10 11 12   3  4  5  6  7  8  9   3  4  5  6  7  8  9                
+13 14 15 16 17 18 19  10 11 12 13 14 15 16  10 11 12 13 14 15 16                
+20 21 22 23 24 25 26  17 18 19 20 21 22 23  17 18 19 20 21 22 23                
+27 28 29 30 31        24 25 26 27 28        24 25 26 27 28 29 30                
+                                            31
+
+    the created alias are confined only to the respective shells and cannot be saved once the shell is closed.
+    each shell has their own alias which cannot be trandferred to other.
+    
 
 
 
