@@ -47,6 +47,48 @@ sysadmin@localhost:~$
 
 
     echo command is used to dislay the output in the terminal.
-    
+
+    COMMAND TYPES:
+          The type command can be used to determine information about command type.
+          There are several different sources of commands within the shell of your CLI including internal commands, external commands, aliases, and functions.
+
+      INTERNAL COMMANDS:
+            these are also called as built_in commands which are built in shell itself.
+            ex:cd (change directory) command as it is part of the Bash shell. When a user types the cd command, the Bash shell is already executing 
+               sysadmin@localhost:~$ type cd                                     
+               cd is a shell builtin
+               The type command identifies the cd command as an internal command
+                
+        EXTERNAL COMMANDS:
+            External commands are programs (binary executable files) stored on your computer.
+             "which" command Shows where an external command is stored.
+                   sysadmin@localhost:~$ which ls                                       
+                   /bin/ls                                                               
+                   sysadmin@localhost:~$ which cal                                        
+                   /usr/bin/cal
+             "type" command tells u the what type of command it is:
+                sysadmin@localhost:~$ type cal                                      
+                cal is /usr/bin/cal
+
+                sysadmin@localhost:~$ type echo                                     
+                echo is a shell builtin
+                sysadmin@localhost:~$ which echo                                        
+                /bin/echo
+
+                Using the -a option of the type command displays all locations that contain the command named:
+
+                      sysadmin@localhost:~$ type -a echo                                      
+                      echo is a shell builtin                                                
+                      echo is /bin/echo
+
+
+                      
+
+
+
+
+
+     
+
     
 
